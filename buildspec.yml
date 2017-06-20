@@ -3,9 +3,8 @@ phase:
   install:
     commands:
       -npm install time
-      -aws cloudformation pachage --template-file samTemplate.yaml --s3-bucket lambda-functin-src-20170620 --output-template-file NewSamTemplate.yaml
+      -aws cloudformation pachage --template-file samTemplate.yaml --s3-bucket lambda-function-src-20170620 --output-template-file NewSamTemplate.yaml
 artifacts:
   type: zip
   files:
     - NewSamTemplate.yaml
-    
