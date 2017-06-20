@@ -5,7 +5,7 @@ Resources:
   TimeFunction:
     Type: AWS::Serverless::function
     Properties:
-      handler: index.handler
+      Handler: index.handler
       Runtime: nodejs4.3
       CodeUri: ./
       Events:
@@ -14,4 +14,3 @@ Resources:
           Properties:
             Path: /TimeResource
             Method: GET
-            
