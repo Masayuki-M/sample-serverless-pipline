@@ -3,7 +3,7 @@ Transform: AWS::Serverless-2016-10-31
 Description: Outputs the time
 Resources:
   TimeFunction:
-    Type: AWS::Serverless::Function
+    Type: AWS::Serverless::function
     Properties:
       Handler: index.handler
       Runtime: nodejs4.3
