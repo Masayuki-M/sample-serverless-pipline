@@ -1,9 +1,9 @@
-version: 0.1
+version: 0.2
 phases:
   install:
     commands:
     - npm install time
-    - aws cloudformation package --template-file samTemplate.yml --output-template-file NewSamTemplate.yml --s3-bucket lambda-function-src-20170620 --capabilities CAPABILITY_IAM
+    - aws cloudformation package --template-file samTemplate.yml --output-template-file NewSamTemplate.yml --s3-bucket lambda-function-src-20170620
     artifacts:
       type: zip
       files:
